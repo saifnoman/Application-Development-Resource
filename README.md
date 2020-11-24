@@ -16,8 +16,8 @@
 ##### Status:
 
 
-Level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yonatanhf/67879aa1f153c6b783303f177fdbaf73/raw/badge_level1.json)
+Level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yonatanhf/8b10356e67ae08eba75cd9ea538db8ab/raw/badge_level1.json)
 
 
 
-level-2: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yonatanhf/pastecopiedhashoflevel-2here/raw/badge_level2.json)
+level-2: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/yonatanhf/49f0991261a948a3cf304fac38dd976b/raw/badge_level2.json)
