@@ -1,0 +1,62 @@
+name: Badge automation
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+jobs:
+  Game_Levels:
+    name: "Preparing Environment!"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: "12"
+
+      - name: "Level-1 Application"
+        run: |
+          echo 'Started level-1 analysis'
+          cd level-1
+          level1_message=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "Completed" || echo "NotCompleted")          
+          level1_color=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "green" || echo "red")
+          echo "level1_message=$level1_message" >> $GITHUB_ENV
+          echo "level1_color=$level1_color" >> $GITHUB_ENV
+
+      - name: "DHIS2 Badge Level-1"
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.auth }}
+          gistID: ${{ secrets.BADGE_LEVEL1 }}
+          filename: badge_level1.json
+          label: DHIS2 Badge Level1
+          message: ${{ env.level1_message }}
+          color: ${{ env.level1_color }}
+
+      - name: "Level-2 application"
+        run: |
+          echo 'Level-1 Status:'
+          echo ${{ env.level1_message }}
+          echo 'Started level-2 analysis'
+          cd level-2
+          level2_message=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "Completed" || echo "NotCompleted")          
+          level2_color=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "green" || echo "red")
+          echo "level2_message=$level2_message" >> $GITHUB_ENV
+          echo "level2_color=$level2_color" >> $GITHUB_ENV
+
+      - name: "DHIS2 Badge Level-2"
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.auth }}
+          gistID: ${{ secrets.BADGE_LEVEL2 }}
+          filename: badge_level2.json
+          label: DHIS2 Badge Level2
+          message: ${{ env.level2_message }}
+          color: ${{ env.level2_color }}
+          
+      - name: "Level-2 Status"
+        run: |
+          echo 'Level-2 Status:'
+          echo ${{ env.level2_message }}
+

@@ -1,0 +1,20 @@
+# Level-1 ignored folders & files
+level-1/node_modules
+level-1/.d2
+level-1/src/locales
+level-1/build
+level-1/cypress/reports/mochareports/assets
+
+# Level-2 ignored folders & files
+level-2/node_modules
+level-2/.d2
+level-2/src/locales
+level-2/build
+level-2/cypress/reports/mochareports/assets
+
+# Continue to add the same directories for other levels, e.g. for level-x
+level-x/node_modules
+level-x/.d2
+level-x/src/locales
+level-x/build
+level-x/cypress/reports/mochareports/assets
