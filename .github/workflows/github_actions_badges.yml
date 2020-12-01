@@ -15,31 +15,73 @@ jobs:
         with:
           node-version: "12"
 
-      - name: "Level-1 Application"
+      - name: "React Level-1 Application"
         run: |
           echo 'Started level-1 analysis'
-          cd level-1
+          cd react/level-1
+          react_level1_message=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "Completed" || echo "NotCompleted")          
+          react_level1_color=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "green" || echo "red")
+          echo "react_level1_message=$react_level1_message" >> $GITHUB_ENV
+          echo "react_level1_color=$react_level1_color" >> $GITHUB_ENV
+          echo "react message: $react_level1_message"
+          echo "react color: $react_level1_color"
+
+      - name: "React Badge Level-1"
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.auth }}
+          gistID: ${{ secrets.REACT_LEVEL1 }}
+          filename: react_level1.json
+          label: React Level1
+          message: ${{ env.react_level1_message }}
+          color: ${{ env.react_level1_color }}
+
+      - name: "React Level-2 Application"
+        run: |
+          echo 'Started level-2 analysis'
+          cd react/level-2
+          react_level2_message=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "Completed" || echo "NotCompleted")          
+          react_level2_color=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "green" || echo "red")
+          echo "react_level2_message=$react_level2_message" >> $GITHUB_ENV
+          echo "react_level2_color=$react_level2_color" >> $GITHUB_ENV
+          echo "react message: $react_level2_message"
+          echo "react color: $react_level2_color"
+
+      - name: "React Badge Level-2"
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.auth }}
+          gistID: ${{ secrets.REACT_LEVEL2 }}
+          filename: react_level2.json
+          label: React Level2
+          message: ${{ env.react_level2_message }}
+          color: ${{ env.react_level2_color }}
+
+      - name: "DHIS2 Level-1 Application"
+        run: |
+          echo 'Started level-1 analysis'
+          cd dhis2/level-1
           level1_message=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "Completed" || echo "NotCompleted")          
           level1_color=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "green" || echo "red")
           echo "level1_message=$level1_message" >> $GITHUB_ENV
           echo "level1_color=$level1_color" >> $GITHUB_ENV
+          echo "secret: ${{secrets.REACT_LEVEL1}}"
 
       - name: "DHIS2 Badge Level-1"
         uses: schneegans/dynamic-badges-action@v1.0.0
         with:
           auth: ${{ secrets.auth }}
           gistID: ${{ secrets.BADGE_LEVEL1 }}
-          filename: badge_level1.json
+          filename: dhis2_level1.json
           label: DHIS2 Badge Level1
           message: ${{ env.level1_message }}
           color: ${{ env.level1_color }}
 
-      - name: "Level-2 application"
+      - name: "DHIS2 Level-2 application"
         run: |
           echo 'Level-1 Status:'
-          echo ${{ env.level1_message }}
           echo 'Started level-2 analysis'
-          cd level-2
+          cd dhis2/level-2
           level2_message=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "Completed" || echo "NotCompleted")          
           level2_color=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "green" || echo "red")
           echo "level2_message=$level2_message" >> $GITHUB_ENV
@@ -50,13 +92,7 @@ jobs:
         with:
           auth: ${{ secrets.auth }}
           gistID: ${{ secrets.BADGE_LEVEL2 }}
-          filename: badge_level2.json
+          filename: dhis2_level2.json
           label: DHIS2 Badge Level2
           message: ${{ env.level2_message }}
           color: ${{ env.level2_color }}
-          
-      - name: "Level-2 Status"
-        run: |
-          echo 'Level-2 Status:'
-          echo ${{ env.level2_message }}
-
