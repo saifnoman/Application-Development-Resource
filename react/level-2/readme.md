@@ -1,4 +1,0 @@
-### Applications To Build:
----
-
- #### Details

@@ -10,6 +10,11 @@ react/level-2/build
 react/level-2/cypress/reports/mochareports/assets
 react/level-2/app/node_modules
 
+# React Level-1 ignored folders & files
+react/level-x/node_modules
+react/level-x/build
+react/level-x/cypress/reports/mochareports/assets
+react/level-x/app/node_modules
 
 # DHIS2 Level-1 ignored folders & files
 dhis2/level-1/node_modules
