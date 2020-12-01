@@ -36,26 +36,26 @@ jobs:
           message: ${{ env.react_level1_message }}
           color: ${{ env.react_level1_color }}
 
-      - name: "React Level-2 Application"
+      - name: "React Level-x Application"
         run: |
-          echo 'Started level-2 analysis'
-          cd react/level-2
-          react_level2_message=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "Completed" || echo "NotCompleted")          
-          react_level2_color=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "green" || echo "red")
-          echo "react_level2_message=$react_level2_message" >> $GITHUB_ENV
-          echo "react_level2_color=$react_level2_color" >> $GITHUB_ENV
-          echo "react message: $react_level2_message"
-          echo "react color: $react_level2_color"
+          echo 'Started level-x analysis'
+          cd react/level-x
+          react_levelx_message=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "Completed" || echo "NotCompleted")          
+          react_levelx_color=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "green" || echo "red")
+          echo "react_levelx_message=$react_levelx_message" >> $GITHUB_ENV
+          echo "react_levelx_color=$react_levelx_color" >> $GITHUB_ENV
+          echo "react message: $react_levelx_message"
+          echo "react color: $react_levelx_color"
 
       - name: "React Badge Level-2"
         uses: schneegans/dynamic-badges-action@v1.0.0
         with:
           auth: ${{ secrets.auth }}
-          gistID: ${{ secrets.REACT_LEVEL2 }}
-          filename: react_level2.json
+          gistID: ${{ secrets.REACT_LEVELx }}
+          filename: react_level2x.json
           label: React Level2
-          message: ${{ env.react_level2_message }}
-          color: ${{ env.react_level2_color }}
+          message: ${{ env.react_levelx_message }}
+          color: ${{ env.react_levelx_color }}
 
       - name: "DHIS2 Level-1 Application"
         run: |
