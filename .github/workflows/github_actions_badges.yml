@@ -67,7 +67,7 @@ jobs:
           echo "level1_color=$level1_color" >> $GITHUB_ENV
           echo "secret: ${{secrets.REACT_LEVEL1}}"
 
-      - name: "DHIS2 Badge Level-1"
+      - name: "DHIS2 Level-1 badge"
         uses: schneegans/dynamic-badges-action@v1.0.0
         with:
           auth: ${{ secrets.auth }}
@@ -87,7 +87,7 @@ jobs:
           echo "level2_message=$level2_message" >> $GITHUB_ENV
           echo "level2_color=$level2_color" >> $GITHUB_ENV
 
-      - name: "DHIS2 Badge Level-2"
+      - name: "DHIS2 Level-2 badge"
         uses: schneegans/dynamic-badges-action@v1.0.0
         with:
           auth: ${{ secrets.auth }}

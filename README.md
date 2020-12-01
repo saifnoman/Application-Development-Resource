@@ -1,5 +1,7 @@
 ## Preparing the environment:
-- Fork this repository by clicking the fork button in the upper right hand corner of this page
+- Fork this repository:
+   - You might need to join in [github](https://github.com/join),
+   - Then proceed to forking this repository by clicking the fork button in the upper right hand corner of this page
 - Head over to [tokens](https://github.com/settings/tokens), generate a new token with **gist scope**
    - After that, *COPY* the token, e.g a token can look like *e5565bedd8ff5cb53a367d9b2dac4602df4b8242*. After copying the token, head over to Setting, then click on Secrets. In Secrets add a variable called *AUTH* and paste the token you copied.
 - Before starting each level, head over to [gists](https://gist.github.com) and create a gist file for that level. E.g. create a **react_level1.json** for the *React Level-1* level with a content of {}.
@@ -15,7 +17,8 @@
    - Remember to do the same three steps for **react_level2.json**, with a secret called *REACT_LEVEL2* and paste the id from url of the badge level-2 in to the **pastecopiedidof-reactlevel-2** part of the url.
 
 
-- At last, to get started with a level, head on to the directory of each a level and read the readme part of the level.
+- You might need [git](https://git-scm.com/downloads) and [nodejs](https://nodejs.org/en/download) installed on your machine.
+- At last, to get started with a level, you might read the readme of that level in browser and follow those steps for that level.
 
 ## Levels' completion status
 ##### React:
