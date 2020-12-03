@@ -24,6 +24,9 @@ describe("Level-1 challenge", ()=>{
         cy.get('input[name="j_password"]')
         .type(password);
         cy.get("[data-test='dhis2-adapter-loginsubmit']").click();
+        cy.wait(3000);
+        cy.get('div[id="root"]').should('contain', 'Hello World!');
+
     });
 
     it('Shows Hello World', ()=>{
