@@ -164,7 +164,7 @@ This level is based on the application described in this [assignment](https://ww
         <Menu>
           <MenuItem
             label={i18n.t("Programs")}
-            dataTest="menu-programs"
+            dataTest="menu-list"
             onClick={() => {
               updateQueryResult(queryProgramResult);
             }}
@@ -190,9 +190,9 @@ This level is based on the application described in this [assignment](https://ww
   );
   ```
 
-At this point the application UI should behave like the finished [assignment](https://www.fiftythreetwenty.com/learn/mandatory-exercises/individual/two/) section.
+At this point the application UI would behave like the finished [assignment](https://www.fiftythreetwenty.com/learn/mandatory-exercises/individual/two/) section.
 
-- Finally, remember to run **run** `yarn test` at the same directory of Level-2,
+- Finally, remember to **run** `yarn test` at the same directory of Level-2,
 - Then
   - add all of your changes by `git add .`,
   - commit it by `git commit -m "commit message"` and
