@@ -1,7 +1,11 @@
 ## Preparing the environment:
 
 - Fork this repository:
-  - First, you might need to join in [github](https://github.com/join),
+  - First, you might need to join in [github](https://github.com/join), because we need the following to setup the environment: 
+      - [Personal Access Tokens](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) from Github, 
+      - [Github Secrets](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets), and
+      - [Github Gists](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/creating-gists#about-gists)
+      
   - Second, proceed to forking this repository by clicking the fork button in the upper right hand corner of this page.
   - Third, head over to [tokens](https://github.com/settings/tokens), generate a new token with **gist scope**
     - After that, _COPY_ the token, e.g a token can look like _e5565bedd8ff5cb53a367d9b2dac4602df4b8242_.
