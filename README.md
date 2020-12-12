@@ -4,13 +4,10 @@
   - [Part I](#part-i): configuring your repository (one time setup) and 
   - [Part II](#part-ii): configuring for a level (done for every level).
 
-- ## Part I:
+## Part I:
     
-    Fork this repository:
-  - First, you might need to join in [Github](https://github.com/join), because you will need the following services from Github: 
-      - [Personal Access Tokens](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token), 
-      - [Github Secrets](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets), and
-      - [Github Gists](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/creating-gists#about-gists)
+  Fork this repository:
+  - First, you might need to join in [Github](https://github.com/join), because you will need the following features from Github: [Personal Access Tokens](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token), [Github Secrets](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets), and [Github Gists](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/creating-gists#about-gists).
       
   - After Signing into your Github account, proceed to forking this repository by clicking the fork button in the upper right hand corner of this page. (can see here [about forking](https://www.youtube.com/watch?v=5oJHRbqEofs))
   - Third, head over to [tokens](https://github.com/settings/tokens), generate a new token with **gist scope**
@@ -20,9 +17,9 @@
       ![Alt Text](./assets/addSecretVariable-Auth.gif)
       
       
-- ## Part II:
+## Part II:
     
-    **This part is to be done for every level**.
+**This part is to be done for every level**.
 
   - Before starting each level, head over to [gists](https://gist.github.com) and create a gist file for that level. E.g. when working on React Level-1, create a **react_level1.json** for the _React Level-1_ level with a content of {}.
   - After creating the gist file for a given level, do the following **important three steps**.
