@@ -1,18 +1,28 @@
 ## Preparing the environment:
 
-- Fork this repository:
-  - First, you might need to join in [github](https://github.com/join), because we need the following to setup the environment: 
-      - [Personal Access Tokens](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) from Github, 
+  Preparing the environment has two parts: 
+  - [Part I](#part-i): configuring your repository (one time setup) and 
+  - [Part II](#part-ii): configuring for a level (done for every level).
+
+- ## Part I:
+    
+    Fork this repository:
+  - First, you might need to join in [Github](https://github.com/join), because you will need the following services from Github: 
+      - [Personal Access Tokens](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token), 
       - [Github Secrets](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets), and
       - [Github Gists](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/creating-gists#about-gists)
       
-  - Second, proceed to forking this repository by clicking the fork button in the upper right hand corner of this page.
+  - After Signing into your Github account, proceed to forking this repository by clicking the fork button in the upper right hand corner of this page. (can see here [about forking](https://www.youtube.com/watch?v=5oJHRbqEofs))
   - Third, head over to [tokens](https://github.com/settings/tokens), generate a new token with **gist scope**
     - After that, _COPY_ the token, e.g a token can look like _e5565bedd8ff5cb53a367d9b2dac4602df4b8242_.
       ![Alt Text](./assets/generateNewToken.gif)
     - After copying the token, head over to Setting of your repository, then click on Secrets. In Secrets add a variable called _AUTH_ and paste the token (you can create new, if you forget to copy it).
       ![Alt Text](./assets/addSecretVariable-Auth.gif)
-- Working on a level:
+      
+      
+- ## Part II:
+    
+    **This part is to be done for every level**.
 
   - Before starting each level, head over to [gists](https://gist.github.com) and create a gist file for that level. E.g. when working on React Level-1, create a **react_level1.json** for the _React Level-1_ level with a content of {}.
   - After creating the gist file for a given level, do the following **important three steps**.
@@ -38,7 +48,7 @@
     - Third and final, do a little editing **in this page** to help display the badge of the level.
       - Just under the **Levels' completion status** part below where the badges are displayed, edit the the url of the badges displayed.
         - use the same copied id and paste it in the url of the badge level-1 in the **pastecopiedidof-react-level-1** part of the url.
-        - Replace the **your-username** part of the url by your github username.
+        - Replace the **your-username** part of the url by your Github username.
 
   - Remember to do the same three steps for every level you are working on. E.g.: if started React level-2, then create a [gist](https://gist.github.com) file called **react_level2.json**, then define a secret called _REACT_LEVEL2_. The content of the secret is id of the react_level-2.json (found in the url). At last, paste the same id in to the **pastecopiedidof-reactlevel-2** at the level-2 badge below.
 
