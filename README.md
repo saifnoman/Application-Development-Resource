@@ -24,8 +24,10 @@
   - Before starting each level, head over to [gists](https://gist.github.com) and create a gist file for that level. E.g. when working on React Level-1, create a **react_level1.json** for the _React Level-1_ level with a content of {}.
   - After creating the gist file for a given level, do the following **important three steps**.
 
-    E.g. for the **react_level1.json**:
-    ![Alt Text](./assets/sampleReactLevel1.gif)
+    - E.g. for the **react_level1.json**:
+        
+        
+        ![Alt Text](./assets/sampleReactLevel1.gif)
 
     - First, find and copy the id of the created gist file:
 
