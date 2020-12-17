@@ -2,26 +2,32 @@
 
 ---
 
-### A Registration form using HTML, CSS and JS.
+### A registration form using HTML, CSS and JS.
 
-##### Application requirements:
+##### Completion requirements:
 
-    1. Should have fields for username, first name, last name, email, password and repeated password,
-    2. On submit, pop up box should thank the user for registration.
+    1. It has fields for username, first name, last name, email, password and repeated password,
+    2. It has submit button and clicking on submit a pop up box should thank the user for registration.
 
 You could read more from the [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event).
 
-##### Steps to follow:
+_Remember_:
 
-_When following the steps below, remember to save the work and reload the browser (http://localhost:3000) to see the changes._
+- _All you need to do is **copy and paste the code** in the boxes below into their respective files._
 
-- Start the application:
+- _When following the steps below, save the work and reload the browser (http://localhost:3000) **to see the changes**._
 
-  - In terminal inside the **html-css-js/level-1/** directory, run:
+- _To test (see [testing](#testing) at the bottom_) before submission.
+
+_Steps to follow_ (4 steps):
+
+- First: start the application:
+
+  - In your terminal in the **html-css-js/level-1/** directory, run:
 
     - `yarn start`
 
-- Edit the index.html:
+- Second: find the index.html and edit the file:
   - Change the content inside the `<body> </body>` with the following:
 
 ```html
@@ -83,8 +89,8 @@ _When following the steps below, remember to save the work and reload the browse
 </form>
 ```
 
-- To improve the visual of the form, we use CSS.
-  - Use your own CSS code or copy the CSS code below and past it inside the `<style></style>`:
+- Third: improve the visual of the form and add some CSS.
+  - You could use your own CSS code or copy the CSS code below and past it inside the `<style></style>`:
 
 ```css
 label {
@@ -106,7 +112,7 @@ button {
 }
 ```
 
-- To give a thank you a pop-up message, we need a function that handles the click event of the button.
+- Fourth: to give a thank you a pop-up message, add a function that handles the click event of the button.
   - Copy the JavaScript code below and past it inside the `<script></script>`
 
 ```js
@@ -116,9 +122,11 @@ function handleSubmit(event) {
 }
 ```
 
-- Now, the application looks better, but it needs to be tested:
+### Testing:
 
-  - Testing: on terminal inside the **html-css-js/level-1/** directory, run:
+- Now, the application looks better, but still it needs to be tested:
+
+  - _**Testing**_: on terminal inside the **html-css-js/level-1/** directory, run:
 
     - `yarn install`
     - `yarn test`
