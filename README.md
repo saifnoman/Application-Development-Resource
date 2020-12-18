@@ -42,6 +42,7 @@
     - Second, head over to secrets of your repository and create a new repository secret to hold the id of the gist file.
 
       - E.g. you can call the secret _REACT_LEVEL1_ and give it the id (**67879aa1f153c6b783303f177fdbaf73**) as its value.
+      
         ![Alt Text](./assets/addSecretVariable-Badge.gif)
 
     - Third and final, do a little editing **in this page** to help display the badge of the level.
