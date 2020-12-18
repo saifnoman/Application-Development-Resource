@@ -1,21 +1,31 @@
-### Level-2
+### Applications To Build:
 
-##### Application with React & DHIS2
+---
 
-##### Application requirements
+##### An application that displays lists and details
 
-This level is based on the application described in this [assignment](https://www.fiftythreetwenty.com/learn/mandatory-exercises/individual/two/).
+##### Completion requirements:
 
-##### Steps to follow:
+This level is based on the application described in this [assignment](https://www.fiftythreetwenty.com/learn/mandatory-exercises/individual/two/) and you may read the requirements there.
 
-- Go to the appliction directory called `level-2` and you could use:
+_Remember_:
+
+- _All you need to do is follow the steps and make required changes in each step._
+
+- _When following the steps below, save the work and you may reload the browser (http://localhost:3000) **to see the changes**._
+
+- _To test (see [testing](#testing) at the bottom_) before submission.
+
+_Steps to follow_ (5steps):
+
+- First: go to the application directory called `level-2` and you could use:
 
   ```bash
   cd level-2
   ```
 
-- In a new terminal, fire up DHIS2 instance by executing the command: `dhis-portal --server=play --instance=dev`, which can be accessed at http://localhost:9999
-- In another terminal of the `level-2` directory:
+- Second: in a new terminal, fire up DHIS2 instance by executing the command: `dhis-portal --server=play --instance=dev`, which can be accessed at http://localhost:9999
+- Third: in another terminal of the `level-2` directory:
 
   - Install the node modules:
 
@@ -27,27 +37,25 @@ This level is based on the application described in this [assignment](https://ww
 
   - access it at http://localhost:3000 on your browser (Chrome preferably)
 
-- The starting source code of the application is found in the `src` directory:
+- Fourth: the starting source code of the application is found in the `src` directory:
 
   - To build the application, start editing the file: `App.js`:
 
   So, follow the steps below (copy & paste the code):
 
-  - First:
-
-  You might need ReactJS library, so import react:
+  - To start, you might need ReactJS library, **so add the following line on the top**:
 
   ```jsx
   import React, { useState } from "react";
   ```
 
-  - You might use `useDataQuery` to fetch data from the DHIS2 instance to the application, see the example at [DHIS2 Application Runtime](https://runtime.dhis2.nu/#/hooks/useDataQuery)
+  - You might use `useDataQuery` to fetch data from the DHIS2 instance to the application, see the example at [DHIS2 Application Runtime](https://runtime.dhis2.nu/#/hooks/useDataQuery), **so add the following code on the top**:
 
   ```jsx
   import { useDataQuery } from "@dhis2/app-runtime";
   ```
 
-  - The application need to make it look like [design](https://www.fiftythreetwenty.com/learn/mandatory-exercises/individual/two/), so import some UI components:
+  - The application need to make it look like [design](https://www.fiftythreetwenty.com/learn/mandatory-exercises/individual/two/), so **so add the following code on the top**:
 
   ```jsx
   import {
@@ -61,7 +69,7 @@ This level is based on the application described in this [assignment](https://ww
   } from "@dhis2/ui-core";
   ```
 
-  - The application would need React components, so add the following components outside the MyApp component.
+  - The application would need React components, so **so add the following component outside** the MyApp component.
 
   ```jsx
   // Query
@@ -151,7 +159,7 @@ This level is based on the application described in this [assignment](https://ww
   };
   ```
 
-- After having the above React components, now we change the content of the MyApp component as:
+- Fifth: after having the above React components, now we change the content of the MyApp component as:
 
   ```jsx
   const queryProgramResult = useDataQuery(query("programs"));
@@ -191,6 +199,8 @@ This level is based on the application described in this [assignment](https://ww
   ```
 
 At this point the application UI would behave like the finished [assignment](https://www.fiftythreetwenty.com/learn/mandatory-exercises/individual/two/) section.
+
+### Testing
 
 - Finally, remember to **run** `yarn test` at the same directory of Level-2,
 - Then
