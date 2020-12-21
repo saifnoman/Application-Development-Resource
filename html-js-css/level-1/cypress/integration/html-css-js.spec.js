@@ -28,7 +28,7 @@ describe("HTML Level-1 challenge", ()=>{
         cy.get('button[id="submitButton"]').click();
         cy.on('window:alert', (str) => {
           console.log(str);
-          expect(str).to.equal("Thank you " + firstName + " for registering!");
+          expect(str).to.contains("Thank you " + firstName + " for registering!");
     });
 });
 });
