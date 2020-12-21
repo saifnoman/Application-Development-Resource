@@ -10,7 +10,9 @@ Preparing the environment has two parts:
 Fork this repository:
 
 - First, you might need to join in [Github](https://github.com/join), because you will need the following features from Github: [Personal Access Tokens](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token), [Github Secrets](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets), and [Github Gists](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/creating-gists#about-gists).
-- After Signing into your Github account, proceed to forking this repository by clicking the fork button in the upper right hand corner of this page. (can see here [about forking](https://www.youtube.com/watch?v=5oJHRbqEofs)), then you will only **be working on your forked repository**. E.g., to clone your repository to your machine use:
+- After Signing into your Github account, proceed to forking this repository by clicking the fork button in the upper right hand corner of this page. (can see here [about forking](https://www.youtube.com/watch?v=5oJHRbqEofs)), then you will only **be working on your forked repository**. 
+    - Enable the workflow in the Actions section of your repository.
+    - To start coding on your machine, you could clone your repository to your machine using:
   `git clone <your repository url>`
 - Third, head over to [tokens](https://github.com/settings/tokens), generate a new token with **gist scope**
 
