@@ -15,6 +15,28 @@ jobs:
         with:
           node-version: "12"
 
+
+      - name: "HTML Level-1 Application"
+        run: |
+          echo 'Started level-1 analysis'
+          cd html-js-css/level-1
+          html_level1_message=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "Completed" || echo "NotCompleted")          
+          html_level1_color=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "green" || echo "red")
+          echo "html_level1_message=$html_level1_message" >> $GITHUB_ENV
+          echo "html_level1_color=$html_level1_color" >> $GITHUB_ENV
+          echo "html message: $html_level1_message"
+          echo "html color: $html_level1_color"
+
+      - name: "HTML Badge Level-1"
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.auth }}
+          gistID: ${{ secrets.HTML_LEVEL1 }}
+          filename: html_level1.json
+          label: HTML Level1
+          message: ${{ env.html_level1_message }}
+          color: ${{ env.html_level1_color }}
+
       - name: "React Level-1 Application"
         run: |
           echo 'Started level-1 analysis'
@@ -36,27 +58,6 @@ jobs:
           message: ${{ env.react_level1_message }}
           color: ${{ env.react_level1_color }}
 
-      - name: "React Level-x Application"
-        run: |
-          echo 'Started level-x analysis'
-          cd react/level-x
-          react_levelx_message=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "Completed" || echo "NotCompleted")          
-          react_levelx_color=$([[ $(test -f ./badge-status.js && node badge-status.js) == Completed ]] && echo "green" || echo "red")
-          echo "react_levelx_message=$react_levelx_message" >> $GITHUB_ENV
-          echo "react_levelx_color=$react_levelx_color" >> $GITHUB_ENV
-          echo "react message: $react_levelx_message"
-          echo "react color: $react_levelx_color"
-
-      - name: "React Badge Level-2"
-        uses: schneegans/dynamic-badges-action@v1.0.0
-        with:
-          auth: ${{ secrets.auth }}
-          gistID: ${{ secrets.REACT_LEVELx }}
-          filename: react_level2x.json
-          label: React Level2
-          message: ${{ env.react_levelx_message }}
-          color: ${{ env.react_levelx_color }}
-
       - name: "DHIS2 Level-1 Application"
         run: |
           echo 'Started level-1 analysis'
@@ -71,9 +72,9 @@ jobs:
         uses: schneegans/dynamic-badges-action@v1.0.0
         with:
           auth: ${{ secrets.auth }}
-          gistID: ${{ secrets.BADGE_LEVEL1 }}
+          gistID: ${{ secrets.DHIS2_LEVEL1 }}
           filename: dhis2_level1.json
-          label: DHIS2 Badge Level1
+          label: DHIS2 Level1
           message: ${{ env.level1_message }}
           color: ${{ env.level1_color }}
 
@@ -91,8 +92,8 @@ jobs:
         uses: schneegans/dynamic-badges-action@v1.0.0
         with:
           auth: ${{ secrets.auth }}
-          gistID: ${{ secrets.BADGE_LEVEL2 }}
+          gistID: ${{ secrets.DHIS2_LEVEL2 }}
           filename: dhis2_level2.json
-          label: DHIS2 Badge Level2
+          label: DHIS2 Level2
           message: ${{ env.level2_message }}
           color: ${{ env.level2_color }}
