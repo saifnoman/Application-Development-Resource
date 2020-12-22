@@ -35,12 +35,6 @@ npx create-react-app app
 cd app
 ```
 
-Install node modules by:
-
-```
-yarn install
-```
-
 start the application by:
 
 ```
@@ -123,7 +117,7 @@ yarn start
           <input
             type="number"
             name="firstNumber"
-            onChange="{inputHandler}"
+            onChange={inputHandler}
             placeholder="1"
           />
         </div>
@@ -134,7 +128,7 @@ yarn start
           <input
             type="text"
             name="mathOperator"
-            onChange="{inputHandler}"
+            onChange={inputHandler}
             placeholder="+,-,/,*,%"
           />
         </div>
@@ -145,7 +139,7 @@ yarn start
           <input
             type="number"
             name="secondNumber"
-            onChange="{inputHandler}"
+            onChange={inputHandler}
             placeholder="1"
           />
         </div>
@@ -154,7 +148,7 @@ yarn start
 
           <button
             type="text"
-            onClick="{handleMathOperation}"
+            onClick={handleMathOperation}
             name="btnMathOperator"
           >
             =
