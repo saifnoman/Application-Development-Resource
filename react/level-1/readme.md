@@ -160,6 +160,8 @@ yarn start
       );
       ```
 
+    - The style of the inputs and button are not aligned (not a good UI), and you may add some css.
+
     - Finally, after testing you can send your local changes to your online github repository
 
   ### Testing:
