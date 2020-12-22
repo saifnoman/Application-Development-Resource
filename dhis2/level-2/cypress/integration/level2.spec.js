@@ -1,4 +1,5 @@
 
+
 Cypress.Commands.add("getBySel", (selector, ...args) => {
     return cy.get(`[data-test=${selector}]`, ...args);
   });
@@ -43,10 +44,14 @@ it('Shows Application Menus', () => {
     cy.get('div[id="root"]').should('contain', 'Programs');
     cy.get('div[id="root"]').should('contain', 'Data sets');
     cy.get('div[id="root"]').should('contain', 'Programs');
+    cy.get("li[data-test='menu-list']").should('be.visible');
+    cy.get("li[data-test='menu-list']").click();
     cy.get("li[data-test='menu-programs']").should('be.visible');
     cy.get("li[data-test='program-list']").should('not.exist');
-    cy.get("li[data-test='menu-programs']").click();
-    cy.get("li[data-test='program-list']").should('exist');
-    cy.get("td[data-test='dhis2-uicore-tablecell']").should('not.exist');
+    cy.get("thead[data-test='dhis2-uicore-tablehead']").should('not.be.visible');
+    cy.get("td[data-test='dhis2-uicore-tablecell']").should('not.be.visible');
+    cy.get("li[data-test='menu-programs']").first().click();
+    cy.get("thead[data-test='dhis2-uicore-tablehead']").should('be.visible');
+    cy.get("td[data-test='dhis2-uicore-tablecell']").should('be.visible');
 });
 });
