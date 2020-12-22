@@ -89,8 +89,6 @@ level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercon
 
 level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/your-username/pastecopiedidof-react-level-1/raw/react_level1.json)
 
-level-2: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/your-username/pastecopiedidof-react-level-2/raw/react_level2.json)
-
 ##### DHIS2:
 
 Level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/your-username/pastecopiedidof-dhis2-level-1/raw/dhis2_level1.json)
