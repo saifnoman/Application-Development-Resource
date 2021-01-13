@@ -1,3 +1,9 @@
+## Application-Development-Resource
+
+Available applications to be developed are in the folders: html-js-css, react and dhis2. Thus, if one desires to do one of the react applications, then one opens the _react_ folder and pick one of the available. The same goes for applications with just html/js/css only.
+
+_Before working on task, one however need to prepare one's environment on Github._
+
 ## Preparing the environment:
 
 Preparing the environment has two parts:
