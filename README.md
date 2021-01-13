@@ -9,7 +9,7 @@ _Before working on task, one however need to prepare one's environment on Github
 Preparing the environment has two parts:
 
 - [Part I](#part-i): configuring your repository (one time setup) and
-- [Part II](#part-ii): configuring for a level (done for every level).
+- [Part II](#part-ii): configuring before starting on one of the application to be done.
 
 ## Part I:
 
@@ -20,6 +20,8 @@ Fork this repository:
     - Enable the workflow in the Actions section of your repository.
     - To start coding on your machine, you could clone your repository to your machine using:
   `git clone <your repository url>`
+    - You might need [git](https://git-scm.com/downloads) and [nodejs](https://nodejs.org/en/download) installed on your machine.
+
 - Third, head over to [tokens](https://github.com/settings/tokens), generate a new token with **gist scope**
 
   - After that, _COPY_ the token, e.g a token can look like _e5565bedd8ff5cb53a367d9b2dac4602df4b8242_.
@@ -32,9 +34,9 @@ Fork this repository:
 
 ## Part II:
 
-**This part is to be done for every level**.
+**This part is to be done for every application**.
 
-- Now, before going to the level you want to work on, create a gist file for the level.
+- Now, before going to the application you want to work on, create a gist file for the application.
 
   **Naming should be based on names in the table name**.
 
@@ -44,8 +46,8 @@ Fork this repository:
 
   Example for the React Level-1:
 
-  - You would head over to [gists](https://gist.github.com) and create a gist file for that level, called **react_level1.json** with a content of {}.
-  - After creating the gist file for the level you are working on, do the following **important three steps**.
+  - You would head over to [gists](https://gist.github.com) and create a gist file for that application, called **react_level1.json** with a content of {}.
+  - After creating the gist file for the application you are working on, do the following **important three steps**.
 
     ![Alt Text](./assets/sampleReactLevel1.gif)
 
@@ -75,17 +77,16 @@ Fork this repository:
 
     ![Alt Text](./assets/addSecretVariable-Badge.gif)
 
-  - Third and final, do a little editing **in this page** to help display the badge of the level.
-    - Just under the **Levels' completion status** part below where the badges are displayed, edit the the url of the badges displayed.
-      - use the same copied id and paste it in the url of the badge level-1 in the **pastecopiedidof-react-level-1** part of the url.
-      - Replace the **your-username** part of the url by your Github username.
+  - Third and important, edit this readme file, so as to display the badge of the completed application you worked on.
+    - Just under the **Applications' completion status** part in this page below where the badges are displayed, edit the the url of the badges.
+      - E.g. Use the same copied id and paste it inside the url of the badge level-1, that is to replace the **pastecopiedidof-react-level-1** part of the url with the copied id. The url looks like: https://gist.githubusercontent.com/your-username/pastecopiedidof-react-level-1/raw/react_level1.json
+      - Similarly, replace the **your-username** part of the url by your Github username.
 
-- Remember to do the same three steps for every level you are working on. E.g.: if started React level-2, then create a [gist](https://gist.github.com) file called **react_level2.json**, then define a secret called _REACT_LEVEL2_. The content of the secret is id of the react_level-2.json (found in the url). At last, paste the same id in to the **pastecopiedidof-reactlevel-2** at the level-2 badge below.
+- Remember to do the same **three steps** for every level you are working on. E.g.: if started React level-2, then create a [gist](https://gist.github.com) file called **react_level2.json**, then define a secret called _REACT_LEVEL2_. The content of the secret is id of the react_level-2.json (found in the url). At last, paste the same id in to the **pastecopiedidof-reactlevel-2** at the level-2 badge below.
 
-- You might need [git](https://git-scm.com/downloads) and [nodejs](https://nodejs.org/en/download) installed on your machine.
 - At last, to get started with a level, go to the directory of the level and read the readme of that level and follow those steps for that level.
 
-## Levels' completion status
+## Applications' completion status
 
 ##### HTML-CSS-JS
 
