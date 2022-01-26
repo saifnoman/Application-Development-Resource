@@ -1,5 +1,5 @@
 ## Application-Development-Resource
-This is a proposal for a step-by-step guideline to build web-applications. To build the web-applications, first set-up your repository and then start building. The building process follows a step-by-step flow for both the configuration and building of othe web-applications, so it is recommended to follow every step along the processes.
+This is a proposal for a step-by-step guideline to build web-applications. To build the web-applications, first set-up (configure) your repository and then start building. The process follows the same step-by-step flow for both the configuration and building of othe web-applications, so it is recommended to follow every step along the processes.
 
 After successful completion of the step-by-step guideline and building the web-applications, rewards are collected in forms of badges.
 
