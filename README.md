@@ -1,17 +1,20 @@
 ## Application-Development-Resource
+This is a proposal for a step-by-step guideline to build web-applications. As part of a MSc. thesis work, this repository is open for suggestions, change proposals and feature updates.
 
-Available applications to be developed are in the folders: html-js-css, react and dhis2. Thus, if one desires to do one of the react applications, then one opens the _react_ folder and pick one of the available. The same goes for applications with just html/js/css only.
+## Overview
+ The web-applications to be built are found in the folders, viz.: html-js-css, react and dhis2.
 
-_Before working on task, one however need to prepare one's environment on Github._
+ 
+## Important
+_Before starting on building, one need to prepare one's environment on Github._
+### Preparing the environment: (_must be done before starting on building a web-application_)
 
-## Preparing the environment:
-
-Preparing the environment has two parts:
+The following two parts must be completed before starting to build the web-applications. After successful configuration by following Part I and Part II, you may proceed to build the web-apps.
 
 - [Part I](#part-i): configuring your repository (one time setup) and
 - [Part II](#part-ii): configuring before starting on one of the application to be done.
 
-## Part I:
+### Part I:
 
 Fork this repository:
 
@@ -32,7 +35,7 @@ Fork this repository:
 
     ![Alt Text](./assets/addSecretVariable-Auth.gif)
 
-## Part II:
+### Part II:
 
 **This part is to be done for every application**.
 
@@ -84,6 +87,8 @@ Fork this repository:
 
 - Remember to do the same **three steps** for every level you are working on. E.g.: if started React level-2, then create a [gist](https://gist.github.com) file called **react_level2.json**, then define a secret called _REACT_LEVEL2_. The content of the secret is id of the react_level-2.json (found in the url). At last, paste the same id in to the **pastecopiedidof-reactlevel-2** at the level-2 badge below.
 
+## Time to build a web-application:
+
 - At last, to get started with a level, go to the directory of the level and read the readme of that level and follow those steps for that level.
 
 ## Applications' completion status
@@ -101,3 +106,4 @@ level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercon
 Level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/your-username/pastecopiedidof-dhis2-level-1/raw/dhis2_level1.json)
 
 level-2: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/your-username/pastecopiedidof-dhis2-level-2/raw/dhis2_level2.json)
+
