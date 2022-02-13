@@ -121,6 +121,8 @@ In this step-2, it is assumed that [Step 1](#step-1) is completed.
 
 Now, to get started with the web application development, pick a folder (directory) in this repository, go to the directory of the level and follow the readme (steps for that level).
 
+![Alt Text](./assets/selecting-folder.gif)
+
 ## Web Applications' completion status
 <hr style="solid gray"> </hr>
 
