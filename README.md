@@ -1,26 +1,44 @@
-## Application-Development-Resource
-This is a proposal for a step-by-step guideline to build web-applications. To build the web-applications, first set-up (configure) your repository and then start building. The process follows the same step-by-step flow for both the configuration and building of othe web-applications, so it is recommended to follow every step along the processes.
 
-After successful completion of the step-by-step guideline and building the web-applications, rewards are collected in forms of badges.
+<hr style="border:2px solid gray"> </hr>
 
-Since, this is a proposed solutions as part an MSc. thesis work, this repository is open for suggestions, change proposals and feature updates.
+## **Gamified Application-Development-Resource**
+<hr style="solid gray"> </hr>
+The project provides an easy-to-follow, and motivational web application development resource. It follows a step-by-step guideline to build web applications.
+ <br /><br/>
 
-## Overview
- The web-applications to be built are found in the folders, viz.: html-js-css, react and dhis2.
+After completing the project (building the web applications, all or partially), rewards as badges are provided at the bottom of this page. The badges show the completion of the milestones.
+### **Overview**
+<hr style="solid gray"> </hr>
 
- 
-## Important
-_Before starting on building, one need to prepare one's environment on Github._
-### Preparing the environment: (_must be done before starting on building a web-application_)
+ ### **Prerequisites**
+When working on this repository, if necessary, use the links and [content](#content) below:
+- For reference on web development topics (HTML, CSS, JavaScript, React, and DHIS2), visit https://dhis2-app-course.ifi.uio.no.
+### **Content**
+Two crucial steps ( [Step 1](#step-1) and [Step 2](#step-2) ).
+  - [Step 1](#step-1): Preparing the environment:
+    - [Part I](#part-i):  Configuration of the repository,
+    - [Part II](#part-ii): Configuration for a web-application
+  - [Step 2](#step-2): Building the web-applications
 
-The following two parts must be completed before starting to build the web-applications. After successful configuration by following Part I and Part II, you may proceed to build the web-apps.
+### **Contact**
+For any questions, changes, or any requests to the repository, <br />contact via: e-mail: yonatanf@ifi.uio.no, or via [Telegram](https://www.t.me/yonatanhf).
+<hr style="border:2px solid gray"> </hr>
+<br/>
 
-- [Part I](#part-i): configuring your repository (one time setup) and
-- [Part II](#part-ii): configuring before starting on one of the application to be done.
+### **Step 1**: 
+<hr style="solid gray"> </hr>
+This step configures the repository to automate the badge (reward) process.<br/>
 
-### Part I:
+(_needs to be completed before starting [step 2](#step-2)_)
 
-Fork this repository:
+Step-1 has two parts, start with part I, then part II:
+
+- [Part I](#part-i):  Configuration of the repository (one-time setup) and
+- [Part II](#part-ii): Configuration for a web application (before starting on one of the web applications to be done).
+
+After completing [Part II](#part-ii), jump to [step 2](#step-2)
+  ### **Part I**:
+<hr style="gray"> </hr>
 
 - First, you might need to join in [Github](https://github.com/join), because you will need the following features from Github: [Personal Access Tokens](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token), [Github Secrets](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets), and [Github Gists](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/creating-gists#about-gists).
 - After Signing into your Github account, proceed to forking this repository by clicking the fork button in the upper right hand corner of this page. (can see here [about forking](https://www.youtube.com/watch?v=5oJHRbqEofs)), then you will only **be working on your forked repository**. 
@@ -39,7 +57,8 @@ Fork this repository:
 
     ![Alt Text](./assets/addSecretVariable-Auth.gif)
 
-### Part II:
+### **Part II**:
+<hr style="solid gray"> </hr>
 
 **This part is to be done for every application**.
 
@@ -91,11 +110,19 @@ Fork this repository:
 
 - Remember to do the same **three steps** for every level you are working on. E.g.: if started React level-2, then create a [gist](https://gist.github.com) file called **react_level2.json**, then define a secret called _REACT_LEVEL2_. The content of the secret is id of the react_level-2.json (found in the url). At last, paste the same id in to the **pastecopiedidof-reactlevel-2** at the level-2 badge below.
 
-## Time to build a web-application:
 
-- At last, to get started with a level, go to the directory of the level and read the readme of that level and follow those steps for that level.
+<hr style="solid gray"> </hr>
 
-## Applications' completion status
+### **Step 2**: Building the web-applications
+
+<hr style="solid gray"> </hr>
+
+In this step-2, it is assumed that [Step 1](#step-1) is completed.
+
+Now, to get started with the web application development, pick a folder (directory) in this repository, go to the directory of the level and follow the readme (steps for that level).
+
+## Web Applications' completion status
+<hr style="solid gray"> </hr>
 
 ##### HTML-CSS-JS
 
@@ -110,4 +137,3 @@ level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercon
 Level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/your-username/pastecopiedidof-dhis2-level-1/raw/dhis2_level1.json)
 
 level-2: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/your-username/pastecopiedidof-dhis2-level-2/raw/dhis2_level2.json)
-
