@@ -128,14 +128,14 @@ Now, to get started with the web application development, pick a folder (directo
 
 ##### HTML-CSS-JS
 
-level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/your-username/pastecopiedidof-html-level-1/raw/html_level1.json)
+level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/saifnoman/94c81ededcdaa6bfba7407c387987b95/raw/html_level1.json)
 
 ##### React:
 
-level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/your-username/pastecopiedidof-react-level-1/raw/react_level1.json)
+level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/saifnoman/pastecopiedidof-react-level-1/raw/react_level1.json)
 
 ##### DHIS2:
 
-Level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/your-username/pastecopiedidof-dhis2-level-1/raw/dhis2_level1.json)
+Level-1: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/saifnoman/pastecopiedidof-dhis2-level-1/raw/dhis2_level1.json)
 
-level-2: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/your-username/pastecopiedidof-dhis2-level-2/raw/dhis2_level2.json)
+level-2: ![badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/saifnoman/pastecopiedidof-dhis2-level-2/raw/dhis2_level2.json)
